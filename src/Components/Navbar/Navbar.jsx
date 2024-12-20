@@ -29,7 +29,7 @@ const Navbar = () => {
           <div className="flex items-center gap-2 text-2xl font-bold">
             <MdComputer className="text-3xl  text-secondary" />
             {/* Use Link instead of <a> */}
-            <Link to="/home">Tutor-Links</Link>
+            <Link to="/home">Tutor-Links shfjkahsdfjkhasjkdhfaksjdhf</Link>
           </div>
           {/* Menu Section */}
           <div className="hidden md:block">
