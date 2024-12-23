@@ -1,13 +1,14 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { NavMenu } from "../MockData/NavMenu";
 import { MdComputer, MdMenu } from "react-icons/md";
 import { motion } from "framer-motion";
 import ResponsiveMenu from "./ResponsiveMenu";
-import { useNavigate, Link } from "react-router-dom";
+import { useNavigate, Link, useLocation } from "react-router-dom";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
   const navigate = useNavigate();
+  const location = useLocation(); // to detect route change
 
   const handleGoToSignIn = () => {
     navigate("/signin"); // Redirects to SignInPage when the button is clicked
@@ -16,6 +17,11 @@ const Navbar = () => {
   const handleGoToSignUp = () => {
     navigate("/signup"); // Redirects to SignUpPage when the button is clicked
   };
+
+  // Close the menu on route change
+  useEffect(() => {
+    setIsOpen(false); // Close the menu when the location changes
+  }, [location]);
 
   return (
     <>
@@ -77,3 +83,4 @@ const Navbar = () => {
 };
 
 export default Navbar;
+
