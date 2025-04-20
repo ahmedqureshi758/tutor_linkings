@@ -12,6 +12,7 @@ import Navbanner from '../Navbar/Navbanner'
 function Home() {
   return (
     <>
+      {/* <Header /> */}
       <Navbanner />
       <Hero />
       <NumberCounter />

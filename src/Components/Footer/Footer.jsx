@@ -78,7 +78,7 @@ function Footer() {
           <div className="mt-8">
             <div className="text-center py-6 border-t-2 border-gray-800/10">
               <span className="text-black text-sm">
-                &copy; 202 All rights reserved | <span ><a href="/home">Tutor Link</a> </span>
+                &copy; 2024 All rights reserved | <span ><a href="/home">Tutor Link</a> </span>
               </span>
             </div>
           </div>

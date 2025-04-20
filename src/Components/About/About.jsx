@@ -9,6 +9,7 @@ import NavBanner from '../Navbar/Navbanner'
 function About() {
   return (
     <>
+      {/* <Header /> */}
     <NavBanner />
     <HeroAbout />
     <CardsAbout />
